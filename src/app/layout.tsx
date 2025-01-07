@@ -4,7 +4,7 @@ import "./globals.css";
 import { inter } from "./assets/fonts";
 
 export const metadata: Metadata = {
-  title: "Camisa Crias",
+  title: "Camisa Cria",
   description: "Saas",
 };
 
