@@ -152,7 +152,7 @@ export default function Home() {
                     "bg-white w-full h-auto mt-4 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow relative"
                   )}
                 >
-                  <div className="h-full mx-auto">
+                  <div className="h-full flex flex-col">
                     <div className="flex gap-2 mb-4 overflow-x-auto pb-2">
                       <button
                         className="h-min border-[1px] rounded-[8px] py-2 px-4 border-[#e4e4e7] hover:bg-[#f4f4f5]"
@@ -185,15 +185,15 @@ export default function Home() {
                         camisa com frase motivacional
                       </button>
                     </div>
-                    <div className="border-[1px] border-[#e4e4e7] rounded-[8px] p-4 mb-8">
-                      <div className="space-y-4">
+                    <div className="border-[1px] border-[#e4e4e7] rounded-[8px] p-4 mb-8 flex-1 flex flex-col">
+                      <div className="space-y-4 flex-1 flex flex-col">
                         <textarea
                           ref={textareaRef}
                           value={prompt}
                           onInput={handleInput}
                           onChange={(e) => setPrompt(e.target.value)}
                           placeholder="Descreva como você quer sua camisa..."
-                          className="w-full bg-transparent resize-none text-black placeholder:text-zinc-400 outline-none focus:outline-none active:outline-none hover:outline-none border-none overflow-hidden"
+                          className="w-full bg-transparent resize-none text-black placeholder:text-zinc-400 outline-none border-none flex-1"
                         />
                         <div className="flex justify-between flex-wrap gap-2 items-center !m-0">
                           <div className="flex gap-2 items-center max-[420px]:container_buttons">
